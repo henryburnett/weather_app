@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+<title>Local Weather App</title>
+<link rel="stylesheet" href="weather_app.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="weather_app.js" charset="UTF-8"></script>
+</head>
+
+<body>
+  <div class="background">
+ <div class="weather-info">
+   <h1 id="local">Your Local Weather</h1>
+   <br />
+   <div class="loader" id="loaderDiv">Loading...</div>
+   <div class="weather-data-div hidden">
+     <p id="city"></p>
+     <div class="temp-div">
+       <p id="temp" onclick="degreeFunc()"></p>
+     </div>
+    <p id="conditions"></p>
+
+   <div class="icon-div">
+    <img src="#" alt="weather icon" id="icon">
+   </div>
+ </div>
+   <br />
+
+
+<div class="forecast-container">
+
+  <div class="forecast hidden" id="fcst0">
+
+    <div class="forecastDay"><h3 id="fcstDay0"></h3></div>
+    <div class="forecastIcon"><img src="#" alt="weather-icon" id="fcstIcon0"></div>
+    <div class="forecastTemp" id="fcstTemp0">
+      <p class="tempMax" id="tempMax0"></p>
+      <p class="tempMin" id="tempMin0"></p>
+     </div>
+  </div>
+  <div class="forecast hidden" id="fcst1">
+    <div class="forecastDay"><h3 id="fcstDay1"></h3></div>
+
+    <div class="forecastIcon"><img src="#" alt="weather-icon" id="fcstIcon1"></div>
+
+    <div class="forecastTemp" id="fcstTemp1">
+      <p class="tempMax" id="tempMax1"></p>
+      <p class="tempMin" id="tempMin1"></p>
+     </div>
+     </div>
+
+  <div class="forecast hidden" id="fcst2">
+    <div class="forecastDay"><h3 id="fcstDay2"></h3></div>
+
+    <div class="forecastIcon"><img src="#" alt="weather-icon" id="fcstIcon2"></div>
+
+    <div class="forecastTemp" id="fcstTemp2">
+      <p class="tempMax" id="tempMax2"></p>
+      <p class="tempMin" id="tempMin2"></p>
+     </div>
+     </div>
+  <div class="forecast hidden" id="fcst3">
+    <div class="forecastDay"><h3 id="fcstDay3"></h3></div>
+
+    <div class="forecastIcon"><img src="#" alt="weather-icon" id="fcstIcon3"></div>
+
+    <div class="forecastTemp" id="fcstTemp3">
+      <p class="tempMax" id="tempMax3"></p>
+      <p class="tempMin" id="tempMin3"></p>
+     </div>
+  </div>
+  <div class="forecast hidden" id="fcst4">
+    <div class="forecastDay"><h3 id="fcstDay4"></h3></div>
+
+    <div class="forecastIcon"><img src="#" id="fcstIcon4" alt="weather-icon"></div>
+
+    <div class="forecastTemp" id="fcstTemp4">
+      <p class="tempMax" id="tempMax4"></p>
+      <p class="tempMin" id="tempMin4"></p>
+     </div>
+     </div>
+
+  </div>
+
+   <br />
+   <p style="text-align: center; width: 100%; display: block; white-space: nowrap; float: left">&copy; 2017 Henry Burnett</p>
+   <br />
+   </div>
+
+</div>
+</body>

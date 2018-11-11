@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+/* GLOBAL STYLES */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Ubuntu;
+  color: white;
+}
+.background{
+  background-image: url(images/cactus_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
+.hidden{
+  display: none;
+}
+/* LOADER STYLES */
+.loader,
+.loader:before,
+.loader:after {
+  background: #ffffff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #ffffff;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+/* WEATHER BOX STYLES */
+.weather-info {
+  text-align: center;
+  border-radius: 15px;
+  width: 50vw;
+  margin: 4vh auto 0 ;
+  padding: 1vh 0;
+  background-color: #272a33;
+  z-index: 99 !important;
+  color: white;
+}
+.weather-info h1 {
+  font-size: 4vw;
+}
+.weather-data-div{
+  width: 35%;
+  display: inline-block;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.weather-data-div p{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2.5vw;
+  padding-bottom: 10px
+}
+#temp{
+font-size: 2.5vw;
+}
+.btn {
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 12px;
+  margin-top: 10px;
+  display: block;
+  font-family: Ubuntu;
+}
+.temp-div{
+  text-align: center;
+  padding-bottom: 5px;
+}
+.temp-div p {
+  display: inline;
+  font-size: 18px;
+}
+.icon-div{
+  width: 160px;
+  margin: 0 auto;
+  padding: 2.5px;
+}
+#icon {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+.forecast-container{
+  margin: 0 auto;
+  width: auto;
+  display: block;
+}
+.forecast {
+  display: inline-block;
+  width: 15%;
+  margin: 2%;
+  border: 2px solid rgb(255,255,255,0.5);
+  text-align: center;
+  font-size: 18px;
+  color: rgb(255,255,255,0.9);
+  border-radius: 3px;
+}
+#fcst0 {
+  margin-left: 3.5%;
+}
+div.forecast div {
+  text-align: center;
+  font-size: 16px;
+}
+.forecastDay h3 {
+  margin-top: 5px;
+  margin-bottom: -3px;
+  font-size: 22px;
+}
+.forecastIcon img {
+  width: 52.5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.tempMax {
+  display: inline;
+  margin-right: 1.5px;
+}
+.tempMin {
+  margin-left: 1.5px;
+  display: inline;
+  color: rgb(255,255,255,0.5)
+}
+
+@media (max-width: 900px) {
+  .weather-info{
+    width: 80vw;
+    padding-bottom: 1.5vh
+  }
+  .weather-info h1 {
+    font-size: 7.5vw;
+    padding-top: 1.5vh;
+  }
+  .weather-data-div{
+    width: 35%;
+    display: inline-block;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  .weather-data-div p{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3.5vw;
+    padding-bottom: 10px
+  }
+  #temp{
+  font-size: 3.5vw;
+  }
+}
