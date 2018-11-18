@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/henryburnett/weather_app/issues"
   },
-  "homepage": "https://github.com/henryburnett/weather_app#readme"
+  "homepage": "https://github.com/henryburnett/weather_app#readme",
+  "devDependencies": {
+    "httpster": "^1.0.4"
+  }
 }
